@@ -12,8 +12,8 @@
 
 SELECT nombre_producto, categoria FROM inventario_sucursal_norte    
 UNION
-SELECT nombre_producto, categoria FROM inventario_sucursal_sur; 
-
+SELECT nombre_producto, categoria FROM inventario_sucursal_sur
+ORDER BY nombre_producto;
 
 -- ── CONSULTA 2: UNION ALL ────────────────
 -- Auditoría de Stock Total
@@ -23,8 +23,8 @@ SELECT nombre_producto, categoria FROM inventario_sucursal_sur;
 
 SELECT * FROM inventario_sucursal_norte
 UNION ALL
-SELECT * FROM inventario_sucursal_sur;
-
+SELECT * FROM inventario_sucursal_sur
+ORDER BY id_producto;
 
 -- ── CONSULTA 3: COMPARACIÓN DE RESULTADOS ─
 -- Ejecutá estas dos consultas para comparar cuántas filas
